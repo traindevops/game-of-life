@@ -1,6 +1,6 @@
 node {
     stage('git'){
-        git 'https://github.com/wakaleo/game-of-life.git'
+        git 'https://github.com/traindevops/game-of-life.git'
     }
     stage('maven'){
         sh 'mvn clean package'
