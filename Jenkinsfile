@@ -1,7 +1,7 @@
 pipeline {
     agent { label 'master' }
     triggers {
-        { pollSCM('H * * * 1-5') }
+        pollSCM('H * * * 1-5') 
     }
     stages {
         stage('SCM'){
